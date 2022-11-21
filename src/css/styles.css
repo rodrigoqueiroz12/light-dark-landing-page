@@ -1,0 +1,379 @@
+#app {
+  max-width: 100vw;
+
+  background-color: var(--purple-05);
+
+  transition-duration: 300ms;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 2.6rem 6rem 1.6rem 6rem;
+
+  background-color: var(--purple-05);
+  z-index: 2;
+  border-bottom: .2rem solid var(--purple-6);
+
+  transition-duration: 300ms;
+}
+
+@media (min-width: 768px) {
+  .header.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    padding: .8rem 6rem;
+
+    opacity: .8;
+  }
+}
+
+.header.fixed-header+main {
+  padding-top: 8.2rem;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo>img {
+  width: 6rem;
+}
+
+.header>nav {
+  display: flex;
+  align-items: center;
+}
+
+.header>nav>.navigation {
+  display: flex;
+  align-items: center;
+
+  gap: 3rem;
+}
+
+.header>nav>.navigation .nav-link {
+  font-family: 'Gotham Book';
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: 325;
+
+  letter-spacing: -0.05em;
+
+  text-decoration: none;
+  text-transform: capitalize;
+
+  color: var(--gray-4);
+
+  transition-duration: 300ms;
+}
+
+.header>nav>.navigation .nav-link:hover {
+  color: var(--gray-3);
+}
+
+.header .contact-button {
+  font-family: 'Gotham Book';
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: 325;
+
+  letter-spacing: -0.05em;
+
+  color: var(--purple-6);
+
+  text-decoration: none;
+
+  padding: 1.2rem 2.4rem;
+  background-color: var(--purple-1);
+  border-radius: .4rem;
+  text-transform: capitalize;
+
+  transition-duration: 300ms;
+}
+
+.header .contact-button:hover {
+  color: var(--purple-5);
+}
+
+.header>.hamburguer-menu {
+  display: none;
+
+  z-index: 9999;
+}
+
+main>section:nth-child(1) {
+  border-top: none;
+}
+
+main>section {
+  border-top: .2rem solid var(--gray-4);
+}
+
+main>section.hero-section {
+  position: relative;
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main>section.hero-section>h1.principal-title {
+  font-family: 'Anton', sans-serif;
+  font-style: normal;
+  font-size: 10rem;
+  font-weight: 400;
+
+  color: var(--purple-5);
+
+  text-transform: uppercase;
+
+  opacity: 0.9;
+}
+
+main>section.hero-section>img.statue {
+  height: 100%;
+
+  user-select: none;
+}
+
+main>section.hero-section>img.statue:nth-child(3) {
+  scale: -1 1;
+}
+
+main>section.hero-section>a {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+
+  translate: -50% 0;
+
+  transition-duration: 300ms;
+
+  animation-name: scale;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+
+  user-select: none;
+}
+
+@keyframes scale {
+  from {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.1;
+  }
+
+  to {
+    scale: 1;
+  }
+}
+
+main>section.hero-section>a>img {
+  width: 7rem;
+}
+
+main>section.about-me-section {
+  display: flex;
+  flex-direction: column;
+}
+
+main>section.about-me-section>div {
+  height: 100vh;
+  display: flex;
+
+  padding: 4rem 7rem;
+}
+
+main>section.about-me-section>div.me-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+main>section.about-me-section>div .informations-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  flex-direction: column;
+
+  width: 48rem;
+}
+
+main>section.about-me-section>div .informations-container>.principal-information {
+  font-family: 'Anton', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.5rem;
+
+  color: var(--gray-4);
+
+  margin-bottom: 4rem;
+}
+
+main>section.about-me-section>div .informations-container>.principal-information::after {
+  content: '';
+  display: block;
+
+  height: 2rem;
+  width: 5rem;
+
+  margin-top: 1.2rem;
+  background-color: var(--purple-4);
+}
+
+main>section.about-me-section>div .informations-container>.paragraph {
+  font-family: 'Gotham Book';
+  font-style: normal;
+  font-weight: 325;
+  font-size: 1.3rem;
+
+  letter-spacing: -0.05em;
+  text-transform: capitalize;
+
+  color: var(--gray-4);
+}
+
+main>section.about-me-section>div .informations-container>.paragraph:nth-child(3) {
+  margin-top: 2rem;
+}
+
+main>section.about-me-section>div>.information-image>img {
+  height: 100%;
+
+  user-select: none;
+}
+
+main>section.about-me-section>div.history-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main>section.about-me-section>div.history-container>.information-image {
+  width: 50rem;
+}
+
+main>section.about-me-section>div.history-container>.information-image>img {
+  height: auto;
+  width: 100%;
+}
+
+main>section.skills-container {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 5rem 10rem;
+
+  gap: 5rem;
+}
+
+main>section.skills-container .principal-title {
+  font-family: 'Anton', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.5rem;
+
+  text-transform: uppercase;
+  color: var(--gray-4);
+}
+
+main>section.skills-container .skills {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 34rem);
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  
+  gap: 1.2rem;
+}
+
+main>section.skills-container .skills>.skill {
+  aspect-ratio: 2 / 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.2rem;
+
+  background-color: var(--purple-1);
+  border-radius: 2rem;
+}
+
+main>section.skills-container .skills>.skill .percent {
+  font-family: 'Gotham Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3rem;
+
+  letter-spacing: -0.05em;
+  color: var(--gray-3);
+}
+
+main>section.skills-container .skills>.skill .title {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+
+  text-transform: uppercase;
+
+  color: var(--white);
+}
+
+footer {
+  background-color: var(--gray-4);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2rem 6rem;
+}
+
+footer .footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .footer-logo>img {
+  width: 6rem;
+}
+
+footer .medias-container {
+  display: flex;
+  align-items: center;
+
+  gap: 3rem;
+}
+
+footer .medias-container>.media {
+  display: flex;
+  align-items: center;
+
+  transition-duration: 300ms;
+}
+
+footer .medias-container>.media:hover {
+  scale: 1.1;
+}
+
+footer .medias-container>.media>img {
+  height: 2.4rem;
+  width: 2.4rem;
+}

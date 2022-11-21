@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  scroll-behavior: smooth;
+}
+
+:root {
+  --white: #fff;
+  --gray-2: #686868;
+  --gray-3: #464646;
+  --gray-4: #292929;
+  --gray-5: #0B0B0B;
+  --purple-05: #F4EFFD;
+  --purple-1: #E9DFFC;
+  --purple-2: #D3BFF9;
+  --purple-4: #A87FF3;
+  --purple-5: #925FF0;
+  --purple-6: #784DC7;
+
+  --red-orange: linear-gradient(90deg, #FA709A 0%, #FEE140 100%);
+}
+
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../fonts/gotham-book/gotham-book.otf");
+}
+
+@font-face {
+  font-family: "Gotham Black";
+  src: url("../fonts/gotham-black/gotham-black-regular.ttf");
+}
+
+@font-face {
+  font-family: "Anton";
+  src: url("../fonts/anton/anton-regular.ttf");
+}

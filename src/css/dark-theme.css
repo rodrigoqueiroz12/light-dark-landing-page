@@ -1,0 +1,84 @@
+@media (prefers-color-scheme: dark) {
+  #app {
+    background-color: var(--gray-5);
+  }
+
+  .header {
+    background-color: var(--gray-5);
+  }
+
+  .header .logo>img {
+    content: url('../images/logo-dark.svg');
+  }
+
+  .header>nav>.navigation .nav-link {
+    color: var(--white);
+  }
+
+  .header>nav>.navigation .nav-link:hover {
+    color: var(--gray-2);
+  }
+
+  .header .contact-button {
+    color: var(--white);
+    background-color: var(--purple-5);
+  }
+
+  .header .contact-button:hover {
+    color: var(--white);
+    background-color: var(--purple-6);
+  }
+
+  main>section.hero-section>h1.principal-title {
+    color: var(--white);
+  }
+
+  main>section.hero-section>a>img {
+    content: url("../images/arrow-white.svg");
+  }
+
+  main>section.about-me-section>div .informations-container>.principal-information {
+    color: var(--white);
+  }
+
+  main>section.about-me-section>div .informations-container>.paragraph {
+    color: var(--white);
+  }
+
+  main>section.about-me-section>div>.information-image>img.me {
+    content: url("../images/woman-dark.webp");
+  }
+
+  main>section.skills-container .principal-title {
+    color: var(--white);
+  }
+
+  main>section.skills-container .skills>.skill {
+    background-color: var(--gray-4);
+  }
+
+  main>section.skills-container .skills>.skill .percent {
+    color: var(--gray-3);
+
+    background: var(--red-orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  main>section.skills-container .skills>.skill .title {
+    color: var(--white);
+  }
+
+  footer {
+    background-color: var(--purple-2);
+  }
+
+  footer .medias-container>.media>img#facebook-logo {
+    content: url("../images/facebook-dark.svg");
+  }
+
+  footer .medias-container>.media>img#linkedin-logo {
+    content: url("../images/linkedin-dark.svg");
+  }
+}

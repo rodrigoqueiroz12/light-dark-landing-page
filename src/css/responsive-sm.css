@@ -1,0 +1,137 @@
+@media (max-width: 768px) {
+  body.active {
+    overflow: hidden;
+  }
+
+  .header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .header>nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    justify-content: center;
+
+    z-index: 1000;
+
+    translate: 0% -100%;
+
+    transition-duration: 300ms;
+  }
+
+  .header>nav.active {
+    translate: 0%;
+    background-color: var(--gray-5);
+  }
+
+  .header>nav .navigation {
+    flex-direction: column;
+
+    gap: 8rem;
+  }
+
+  .header>nav .navigation .nav-link {
+    font-size: 2.4rem;
+  }
+
+  .header.fixed-header+main {
+    padding-top: 0rem;
+  }
+
+  .header>.contact-button {
+    position: fixed;
+    top: 0;
+    left: 50%;
+
+    z-index: 1001;
+    translate: -50% -100%;
+
+    transition-duration: 300ms;
+  }
+
+  .header>.contact-button.active {
+    top: 90%;
+    
+    translate: -50% 0%;
+  }
+
+  .header>.hamburguer-menu{
+    display: block;
+
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  .header>.hamburguer-menu.active {
+    display: block;
+
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  main>section.hero-section {
+    height: 85vh;
+    justify-content: center;
+  }
+
+  main>section.hero-section>h1.principal-title {
+    font-size: 8rem;
+  }
+
+  main>section.hero-section>img.statue {
+    display: none;
+  }
+
+  main>section.about-me-section .me-container,
+  main>section.about-me-section .history-container,
+  main>section.skills-container {
+    flex-direction: column;
+
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    gap: 2rem;
+  }
+
+  main>section.about-me-section .me-container .informations-container {
+    width: 100%;
+  }
+
+  main>section.about-me-section .me-container .information-image>img {
+    height: auto;
+    width: 100%;
+  }
+
+  main>section.about-me-section .me-container .history-container {
+    width: 100%;
+  }
+
+  main>section.about-me-section .history-container .informations-container {
+    width: 100%;
+  }
+
+  main>section.about-me-section>div.history-container>.information-image {
+    width: 100%;
+
+    order: 1;
+  }
+
+  main>section.about-me-section .history-container .information-image>img {
+    height: auto;
+    width: 100%;
+  }
+
+  footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
